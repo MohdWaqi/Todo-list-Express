@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+
+.background-style{
+    @apply h-screen bg-gradient-to-br from-lime-200 via-green-300 to-lime-300 flex justify-center;
+}
+.btn{
+    @apply ml-20 rounded-full text-4xl bg-themeGreen h-10 w-10 text-white hover:bg-green-600 hover:-translate-x-1 transition;
+}
+.heading{
+    @apply mt-20 text-4xl font-serif bg-themeGreen rounded-2xl text-white px-6 py-4 font-bold text-center drop-shadow-2xl;
+}
+.items-organised {
+    @apply flex flex-col space-y-6 font-bold;
+}
+.list-format{
+    @apply mt-12 border-solid rounded-2xl bg-white drop-shadow-2xl
+}
+.list-style{
+    @apply font-style_script text-3xl text-themeGreen p-6;
+}
+.space{
+    @apply py-4
+}
+.text-style{
+    @apply pt-6 text-3xl bg-transparent focus:outline-0 ;
+}
+.box{
+    @apply mr-10
+}
+.text-list{
+    @apply inline 
+}
+/* li::before{
+    padding-right: 2rem;
+    content: "👽";
+} */
+input:checked+p {
+    @apply line-through decoration-blue-600
+}
+
+@tailwind utilities;
